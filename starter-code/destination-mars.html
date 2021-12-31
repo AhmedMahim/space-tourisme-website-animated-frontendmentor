@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Ahmed Mahim |Frontend Mentor | Space tourism website</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- own styleshet -->
+  <link rel="stylesheet" href="./styles/destination.css">
+  <!-- Animations Stylesheet -->
+  <link rel="stylesheet" href="./styles/animations.css">
+</head>
+
+<body>
+  <nav class="navabar">
+    <div class="logo">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z" fill="#0B0D17" />
+      </svg>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-text ">
+            <span>00 </span> Home </a>
+        </li>
+        <li>
+          <a href="destination-moon.html" class="nav-text active">
+            <span>01 </span> Destination </a>
+        </li>
+        <li>
+          <a href="crew-commander.html" class="nav-text">
+            <span>02 </span> Crew </a>
+        </li>
+        <li>
+          <a href="technology-vehicle.html" class="nav-text">
+            <span>03 </span> Technology </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu -->
+    <img src="./assets/shared/icon-hamburger.svg" alt="Menu" class="humburger" id="menuIcon">
+    <div class="mobile-nav" id="mobileNav">
+      <img src="./assets/shared/icon-close.svg" alt="Close" class="closeIcon" id="close">
+      <div class="mobile-nav-links">
+        <ul>
+          <li>
+            <a href="index.html" class="nav-text ">
+              <span>00 </span> Home </a>
+          </li>
+          <li>
+            <a href="destination-moon.html" class="nav-text active">
+              <span>01 </span> Destination </a>
+          </li>
+          <li>
+            <a href="crew-commander.html" class="nav-text">
+              <span>02 </span> Crew </a>
+          </li>
+          <li>
+            <a href="technology-vehicle.html" class="nav-text">
+              <span>03 </span> Technology </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="title">
+      <div class="anim-bx">
+        <h5>
+          <span>01</span>Pick your destination
+        </h5>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <img src="./assets/destination/image-mars.png">
+      </div>
+      <div class="right">
+        <div class="dest-nav">
+          <ul>
+            <li class="dest-link nav-text ">
+              <a href="destination-moon.html">Moon</a>
+            </li>
+            <li class="dest-link nav-text active">
+              <a href="destination-mars.html">Mars</a>
+            </li>
+            <li class="dest-link nav-text ">
+              <a href="destination-europa.html">Europa</a>
+            </li>
+            <li class="dest-link nav-text ">
+              <a href="destination-titan.html">Titan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="anim-bx">
+          <h1>Mars</h1>
+        </div>
+        <div class="anim-bx">
+          <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary
+            mountain in our solar system. It’s two and a half times the size of Everest!</p>
+        </div>
+        <div class="dest-info">
+          <div class="distance">
+            <div class="anim-bx">
+              <div class="sh2">Avg. distance</div>
+              <div class="sh1">225 mil. km</div>
+            </div>
+          </div>
+          <div class="travel-time">
+            <div class="anim-bx">
+              <div class="sh2">Est. travel time</div>
+              <div class="sh1">9 months</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>

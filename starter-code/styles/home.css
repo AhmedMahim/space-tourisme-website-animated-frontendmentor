@@ -1,0 +1,86 @@
+body {
+	background: url(../assets/home/background-home-desktop.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+main {
+	display: flex;
+	align-items: flex-end;
+	padding: 0 12vw;
+	padding-bottom: 15vh;
+	justify-content: space-between;
+}
+
+h5 {
+	color: var(--primary);
+}
+
+.text-bx {
+	max-width: 30rem;
+}
+
+.text-bx h1 {
+	margin: 2rem 0;
+}
+
+.button {
+	width: 20vw;
+	height: 20vw;
+	min-height: 200px;
+	min-width: 200px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--light);
+	color: var(--dark);
+	line-height: 1;
+	font-size: 32px;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: relative;
+	margin-left: 2vw;
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	background: var(--light);
+	opacity: .2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	transition: all 400ms ease;
+}
+
+.button:hover::before {
+	width: 30vw;
+	height: 30vw;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		flex-direction: column;
+		padding-top: 15vh;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.button {
+		margin-top: 8vh;
+	}
+
+	main {
+		height: calc(100vh - 90px);
+	}
+
+	.button:hover::before {
+		width: 250px;
+		height: 250px;
+	}
+}

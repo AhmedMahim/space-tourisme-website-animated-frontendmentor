@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Ahmed Mahim |Frontend Mentor | Space tourism website</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- own styleshet -->
+  <link rel="stylesheet" href="./styles/tech.css">
+  <!-- Animations Stylesheet -->
+  <link rel="stylesheet" href="./styles/animations.css">
+</head>
+
+<body>
+  <nav class="navabar">
+    <div class="logo">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z" fill="#0B0D17" />
+      </svg>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-text ">
+            <span>00 </span> Home </a>
+        </li>
+        <li>
+          <a href="destination-moon.html" class="nav-text">
+            <span>01 </span> Destination </a>
+        </li>
+        <li>
+          <a href="crew-commander.html" class="nav-text">
+            <span>02 </span> Crew </a>
+        </li>
+        <li>
+          <a href="technology-vehicle.html" class="nav-text active">
+            <span>03 </span> Technology </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu -->
+    <img src="./assets/shared/icon-hamburger.svg" alt="Menu" class="humburger" id="menuIcon">
+    <div class="mobile-nav" id="mobileNav">
+      <img src="./assets/shared/icon-close.svg" alt="Close" class="closeIcon" id="close">
+      <div class="mobile-nav-links">
+        <ul>
+          <li>
+            <a href="index.html" class="nav-text ">
+              <span>00 </span> Home </a>
+          </li>
+          <li>
+            <a href="destination-moon.html" class="nav-text">
+              <span>01 </span> Destination </a>
+          </li>
+          <li>
+            <a href="crew-commander.html" class="nav-text">
+              <span>02 </span> Crew </a>
+          </li>
+          <li>
+            <a href="technology-vehicle.html" class="nav-text active">
+              <span>03 </span> Technology </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="title">
+      <div class="anim-bx">
+        <h5>
+          <span>03</span>Space launch 101
+        </h5>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="numb-nav">
+          <a href="technology-vehicle.html" class="numb-link ">1</a>
+          <a href="technology-spaceport.html" class="numb-link ">2</a>
+          <a href="technology-capsule.html" class="numb-link active">3</a>
+        </div>
+        <div class="text-bx">
+          <div class="anim-bx">
+            <div class="nav-text">The terminology...</div>
+          </div>
+          <div class="anim-bx">
+            <h3>Space capsule</h3>
+          </div>
+          <div class="anim-bx">
+            <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's
+              atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space
+              gym, cinema, and plenty of other activities to keep you entertained.</p>
+          </div>
+        </div>
+      </div>
+      <div class="right tech">
+        <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="" id="banner">
+      </div>
+    </div>
+  </main>
+  <script src="./js/menu.js"></script>
+  <script src="./js/capsul.js"></script>
+</body>
+
+</html>

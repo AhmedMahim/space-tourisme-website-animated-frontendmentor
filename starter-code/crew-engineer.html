@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Ahmed Mahim |Frontend Mentor | Space tourism website</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- own styleshet -->
+  <link rel="stylesheet" href="./styles/crew.css">
+  <!-- Animations Stylesheet -->
+  <link rel="stylesheet" href="./styles/animations.css">
+</head>
+
+<body>
+  <nav class="navabar">
+    <div class="logo">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z" fill="#0B0D17" />
+      </svg>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-text ">
+            <span>00 </span> Home </a>
+        </li>
+        <li>
+          <a href="destination-moon.html" class="nav-text">
+            <span>01 </span> Destination </a>
+        </li>
+        <li>
+          <a href="crew-commander.html" class="nav-text active">
+            <span>02 </span> Crew </a>
+        </li>
+        <li>
+          <a href="technology-vehicle.html" class="nav-text">
+            <span>03 </span> Technology </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu -->
+    <img src="./assets/shared/icon-hamburger.svg" alt="Menu" class="humburger" id="menuIcon">
+    <div class="mobile-nav" id="mobileNav">
+      <img src="./assets/shared/icon-close.svg" alt="Close" class="closeIcon" id="close">
+      <div class="mobile-nav-links">
+        <ul>
+          <li>
+            <a href="index.html" class="nav-text ">
+              <span>00 </span> Home </a>
+          </li>
+          <li>
+            <a href="destination-moon.html" class="nav-text">
+              <span>01 </span> Destination </a>
+          </li>
+          <li>
+            <a href="crew-commander.html" class="nav-text active">
+              <span>02 </span> Crew </a>
+          </li>
+          <li>
+            <a href="technology-vehicle.html" class="nav-text">
+              <span>03 </span> Technology </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="title">
+      <div class="anim-bx">
+        <h5>
+          <span>02</span>Meet your crew
+        </h5>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="anim-bx">
+          <h4 class="role">Flight Engineer</h4>
+        </div>
+        <div class="anim-bx">
+          <h3 class="name">Anousheh Ansari</h3>
+        </div>
+        <div class="anim-bx">
+          <p class="disc">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was
+            the
+            fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in
+            space.</p>
+        </div>
+        <div class="secnd-dot-nav">
+          <a href="crew-commander.html" class="dot dot1 "></a>
+          <a href="crew-specialist.html" class="dot dot2 "></a>
+          <a href="crew-pilot.html" class="dot dot3"></a>
+          <a href="crew-engineer.html" class="dot dot4 active"></a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./assets/crew/image-anousheh-ansari.png" alt="">
+      </div>
+    </div>
+    <div class="dot-nav">
+      <a href="crew-commander.html" class="dot dot1"></a>
+      <a href="crew-specialist.html" class="dot dot2 "></a>
+      <a href="crew-pilot.html" class="dot dot3"></a>
+      <a href="crew-engineer.html" class="dot dot4 active"></a>
+    </div>
+  </main>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+body {
+    background: url(../assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title span {
+    color: rgb(100, 100, 100);
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.title {
+    color: var(--light);
+}
+
+main {
+    padding-top: 6vh;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 4vw;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .title {
+        text-align: center;
+    }
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15vw;
+}
+
+.right img {
+    width: 100%;
+}
+
+.role {
+    margin-top: 20vh;
+    color: rgb(114, 114, 114);
+    margin-bottom: 2vh;
+}
+
+.name {
+    margin-bottom: 3vh;
+}
+
+.disc {
+    max-width: 29rem;
+    max-height: 10rem;
+}
+
+.right {
+    min-width: 10rem;
+}
+
+.dot-nav,
+.secnd-dot-nav {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.secnd-dot-nav {
+    bottom: -4vh;
+}
+
+.left {
+    position: relative;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: opacity 400ms ease;
+}
+
+.dot.active {
+    background: #fff;
+}
+
+.dot.active:hover {
+    background: #fff;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .role {
+        margin-top: 5vh;
+    }
+
+    p {
+        max-width: none;
+        line-height: 1.5;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 30vh;
+        min-height: 30vh;
+    }
+
+    .right {
+        max-width: 25rem;
+        margin: 0;
+        max-height: 30vh;
+        min-height: 30vh;
+    }
+
+    .dot-nav {
+        display: none;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .right {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid #7e7e7e;
+        position: relative;
+        top: -6vh;
+    }
+
+    .right img {
+        max-width: 15rem;
+    }
+
+    .left {
+        position: relative;
+    }
+
+    .secnd-dot-nav {
+        bottom: auto;
+        top: 0;
+    }
+}
